@@ -1,0 +1,55 @@
+h1 {
+    color: rgba(290, 60, 0, 0.68);
+    text-align: center;
+}
+
+.first-box {
+    text-align: right;
+}
+
+h3 {
+    color: rgba(0, 105, 0, 0.9);
+}
+
+#bandLists {
+    border: 2px solid black;
+    list-style: none;
+    font-weight: bold;
+}
+#firstBand {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.movie {
+    background-color: rgb(166, 211, 255);
+}
+#movieHeading {
+    text-align: center;
+    border: 4px dashed gold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 500;
+    color: darkblue;
+}
+
+.sub-heading {
+    color: purple;
+    text-align: center;
+    text-decoration: overline;
+}
+#favouriteMovie {
+    color: sandybrown;
+}
+.movie-box {
+    color: darkgreen;
+    text-align: center;
+    font-size: larger;
+    list-style-position: inside;
+    font-weight: 600;
+}
+#movieHeading {
+    color: blueviolet;
+}
+#movieHeading2 {
+    color: midnightblue;
+}
