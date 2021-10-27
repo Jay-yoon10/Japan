@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <!-- Why do we need forms? -->
+  <!-- How do we create a form? -->
+  <!-- What kind of input do we have access to in HTML? -->
+
+  <form>
+    <div>
+    <label for="textInput">Text Input</label>
+    <br>
+    <input type="text" placeholder="This is a text input." id="textInput"/>
+    
+    <input type="button" value="Button"/>
+    </div>
+    <br>
+    <div>
+    <label for="countries">Choose a Country</label>
+    <br>
+    <div id="countires">
+      <label for="fr">France</label>
+      <input type="radio" id="fr" name="country">
+      <label for="au">Australia</label>
+      <input type="radio" id="au"name="country">
+      <label for="uk">UK</label>
+      <input type="radio" id="uk"name="country">
+
+    </div>
+  </div>
+    <input type="text" />
+    
+    <label for="colorSelect">Select Color</label>
+    <select id="colorSelect">
+      <option>Red</option>
+      <option>Green</option>
+      <option>Blue</option>
+      <option>Yellow</option>
+
+    </select>
+    <textarea cols="30" rows="10">This is a text area input field.</textarea>
+    <input type="submit" />
+  </form>
+  
+</body>
+</html>

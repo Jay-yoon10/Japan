@@ -1,0 +1,22 @@
+h1 {
+    color: rgba(290, 60, 0, 0.68);
+    text-align: center;
+}
+
+.first-box {
+    text-align: right;
+}
+
+h3 {
+    color: rgba(0, 105, 0, 0.9);
+}
+
+#bandLists {
+    border: 2px solid black;
+    list-style: none;
+    font-weight: bold;
+}
+#firstBand {
+    text-decoration: underline;
+    font-style: italic;
+}

@@ -1,0 +1,30 @@
+/* [selector (id, class, element] {
+    [property]: [property-value];
+    [property]: [property-value];
+    }
+*/
+
+h3 {
+    color: rgba(30, 60, 100, 0.8);
+    background-color: yellow;
+    border: 2px dashed salmon;
+    border-width: 50;
+    border-style: solid;
+    border-color: gray;
+    text-align: right;
+}
+#firstBox {
+    height: 600px;
+    width: 300px;
+}
+/* class */
+.second-box {
+    text-decoration: none;
+}
+/* id */
+#firstH3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-decoration: underline;
+}

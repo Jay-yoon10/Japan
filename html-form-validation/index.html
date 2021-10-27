@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Validation</title>
+</head>
+<body>
+  <!-- Action: Specifies the URL where we are sending the form -->
+  <!-- Method: specifies what we want to do with form (ie.POST = Create data on server) -->
+  <!-- Name: attribtue is required for from to be sent -->
+  <form action="https://formspree.io/f/xeqvwdrj" method="post">
+    <label for="petName">Give you pet a name</label>
+    <input id="petName" type="text" name="petName"required>
+
+    <div>
+      <label for="petType">Select the kind of pet you want:</label>
+      <select name="" id="">
+        <option>Cat</option>
+        <option>Dog</option>
+        <option>Rabbit</option>
+        <option>Owl</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"required>
+    </div>
+
+    <div>
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone">
+    </div>
+
+    <label for="message">Message:</label>
+
+    <div>
+      <textarea id="message" cols="30" rows="10" name="message" required></textarea>
+    </div>
+
+    <input type="submit">
+  </form>
+  
+</body>
+</html>
