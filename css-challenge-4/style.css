@@ -1,0 +1,19 @@
+.yahoo:link {
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.yahoo:visited {
+    color: crimson;
+    font-size: x-small;
+    cursor: -webkit-grabbing;
+}
+.yahoo:active {
+    color: white;
+    background-color: black;
+}
+.yahoo:hover {
+    color: cadetblue;
+    cursor: -webkit-grab;
+}

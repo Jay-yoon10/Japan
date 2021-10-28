@@ -1,0 +1,51 @@
+main {
+    display: flex;
+}
+
+.block-container {
+    width: 150px;
+}
+
+section {
+    text-align: justify;
+}
+/* section::after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+.card {
+    display: inline-block;
+} */
+
+/* Same code with flex
+  ! Flex used on a container is going to make container
+  ! Display: flex
+  ! Flex-wrap
+  ! Flex-direction
+  ! Justify-content
+  ! */
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+.card {
+    margin: 20px;
+    border: 2px solid black;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.input {
+    width: 100px;
+    margin: 10px;
+}

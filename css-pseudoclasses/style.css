@@ -49,3 +49,16 @@ p {
 a:active {
     color: chocolate;
 }
+
+form > input:optional {
+    border: 2px solid hotpink;
+}
+
+form > input:disabled {
+    border: 2px dashed darkgray;
+}
+
+form > input:required {
+    border-radius: 20px;
+    border: 2px solid burlywood;
+}
