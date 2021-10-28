@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Specificity, Combinators</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <p class="red-para">Paragraph 1</p>
+    <div id="header">
+        <p class="red-para">First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p class="third-para">Third Paragraph</p>
+    </div>
+   -->
+
+   <div>
+     <p>
+       I will be selected
+     </p>
+     <section><p>I will not be selected</p></section>
+   </div>
+   <p>I won't be selected :(</p>
+
+   <div class="container">
+    <p>
+      I will be selected
+    </p>
+    <div><p>I will be selected too</p></div>
+  </div>
+  <p>I won't be selected :(</p>
+
+</body>
+</html>

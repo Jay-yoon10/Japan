@@ -1,0 +1,51 @@
+/* Hover pseudo class */
+
+/* 
+div > p:hover {
+    color: red;
+}
+
+p {
+    color: blue;
+} */
+
+/* of- type pseudo classes */
+
+.wrapper > p:first-of-type {
+    color: green;
+}
+
+.wrapper > p:nth-of-type(2) {
+    color: red;
+}
+
+.wrapper p:nth-last-of-type(4) {
+    color: brown;
+}
+
+.wrapper > h1:only-of-type {
+    text-decoration: underline;
+}
+
+/* Link related pseudo-classes */
+
+.barbie:link {
+    color: hotpink;
+    text-decoration: none;
+}
+/* Vistited Link */
+.barbie:visited {
+    color: green;
+}
+
+/* Mouse over Link */
+.barbie:hover {
+    color: cadetblue;
+    font-size: x-large;
+    cursor: -webkit-grab;
+}
+
+/* Clicked on link */
+a:active {
+    color: chocolate;
+}

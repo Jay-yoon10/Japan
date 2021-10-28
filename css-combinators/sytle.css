@@ -1,0 +1,23 @@
+/* Targeting the first sibling of the div container that is a paragraph */
+div.container + p {
+    color: hotpink;
+}
+
+div.container + p + p {
+    color: green;
+}
+
+div.container + p + p + section {
+    color: blue;
+}
+
+div.container p {
+    color: darkmagenta;
+}
+/* Targets all siblings of the div box that are a paragraph */
+div.box ~ p {
+    color: red;
+}
+div.box ~ * {
+    color: red;
+}

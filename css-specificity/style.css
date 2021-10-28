@@ -1,0 +1,28 @@
+div > p {
+    color: red;
+}
+
+div section {
+    text-decoration: underline;
+    color: brown;
+}
+div.container p {
+    color: blue;
+}
+/* .red-para {
+    color: red;
+}
+
+div {
+    color: blue;
+}
+
+#header .red-para {
+    text-decoration: underline;
+    font-weight: bold;
+    color: gray;
+}
+
+* {
+    font-style: italic;
+} */
