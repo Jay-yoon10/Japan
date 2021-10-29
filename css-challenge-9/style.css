@@ -1,0 +1,57 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+p {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.sub-container-one {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.sub-container-two {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#cardOne {
+    background-color: blue;
+}
+#cardTwo {
+    background-color: red;
+}
+#cardThree {
+    background-color: violet;
+}
+#cardFour {
+    background-color: palegreen;
+}
+#cardFive {
+    background-color: orange;
+}
+#cardSix {
+    background-color: burlywood;
+}
+#cardSeven {
+    background-color: slategray;
+}
+#cardEight {
+    background-color: hotpink;
+}

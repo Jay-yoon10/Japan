@@ -1,0 +1,21 @@
+input {
+    border-radius: 5px;
+}
+
+input:enabled {
+    background-color: rgba(52, 146, 223, 0.781);
+    border: 2px solid black;
+}
+
+input:required {
+    border: 2px solid red;
+}
+
+button {
+    border-radius: 5px;
+    margin-right: 20px;
+}
+#enabledButton {
+    background-color: rgba(52, 146, 223, 0.781);
+    border: 2px solid black;
+}
