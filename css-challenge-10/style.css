@@ -1,0 +1,19 @@
+ul{
+  
+  justify-content: space-evenly;
+  display: flex;
+  height: 60px;
+  border: 2px solid black;
+
+  
+}
+
+li{
+  display: flex;
+  align-items: center;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
