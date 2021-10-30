@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>Contact Page</title>
+</head>
+<body>
+  <main>
+   
+
+    <section class="contact">
+      <form action="https://formspree.io/f/xeqvwdrj" method="post">
+        
+        <h1>CONTACT FORM </h1>
+        
+        <div>
+          <label for="firstName">First Name: </label>
+          <input type="text"  id="firstName" placeholder="First Name*" required>
+        </div>  
+        <div>
+          <label for="lastName">Last Name: </label>
+          <input type="text" id="lastName" placeholder="Last Name*"required>
+        </div>  
+        <div>
+          <label for="age">Age: </label>
+          <input type="number" id="age" placeholder="Age*"required>
+        </div> 
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" id="email" placeholder="email@example.com*" required>
+        </div>
+        <div>
+          <textarea cols="41" rows="10">Leave any messages here</textarea>
+        </div>
+        
+        <div>
+          <label for="state">Choose your state :</label>
+          <select id="state"required>
+            <option>NSW</option>
+            <option>QLD</option>
+            <option>TAS</option>
+            <option>NT</option>
+            <option>WA</option>
+            <option>SA</option>
+            <option>ACT</option>
+            <option>VIC</option>
+          </select>
+          </div>
+          <div>
+          <button type="submit">Submit</button>
+        </div>  
+        
+      </form>
+  </section>
+  <section class="nav-bar">
+    <nav>
+      <ul>
+        <li>
+          <a href="./home.html">Home</a>
+        </li>
+        <li><a href="./contact.html" class="active-page">Contact Us</li>
+        <li><a href="./about.html" >About Us</li>
+        <li><a href="./bookings.html" >Bookings</li>
+      </ul>
+    </nav>
+  </section>
+  </main>
+  
+</body>
+</html>

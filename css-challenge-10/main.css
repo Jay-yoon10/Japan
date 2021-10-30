@@ -1,10 +1,15 @@
+.active-page{
+  font-weight: bolder;
+}
 ul{
   
   justify-content: space-evenly;
   display: flex;
   height: 60px;
   border: 2px solid black;
-
+  border-radius: 5px;
+  
+  
   
 }
 
