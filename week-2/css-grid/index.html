@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+</head>
+<!-- What is the difference between Flex and Grid? -->
+<!-- > Flexis uni-directional > Grid is bi-directional -->
+<!-- When to use Grid over Flex? -->
+<!-- > We prefer using Grid when creating complex layouts -->
+<!-- How to set up and use a Grid? -->
+<body>
+    <article class="grid-container">
+      <section class="card">Card 1</section>
+      <section class="card">Card 2</section>
+      <section class="card">Card 3 This is more content</section>
+      <section class="card">Card 4</section>
+      <section class="card">Card 5</section>
+      <section class="card">Card 6</section>
+      <section class="card">Card 7</section>
+      <section class="card">Card 8</section>
+      <section class="card">Card 8</section>
+      <section class="card">Card 8</section>
+
+    </article>
+<!-- 
+    <div class="second-grid">
+      <section class="card" id="firstSection">1. My First Section</section>
+      <section class="card" id="secondSection">2. My Second Section</section>
+      <section class="card" id="thirdSection">3. My Thrid Section</section>
+      <article id="myArticle">My Article</article>
+     
+      
+    </div> -->
+    <style>
+      .grid-container {
+       
+        display: grid;
+        grid-template-columns: 25% 200px auto 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        
+        /* fraction */
+      }
+      .card{
+        background-color: blue;
+      }
+
+      /* .second-grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:"one one one one"
+        "two two two two"
+        "three three three three";
+        gap: 10px;
+      } */
+
+      .card{
+        height: 100px;
+      }
+      #firstSection{
+        grid-area: one;
+        background-color: hotpink;
+      }
+      #secondSection{
+        background-color: green;
+        grid-area: two;
+        
+      }
+      #thirdSection{
+        background-color: indigo;
+        grid-area: three;
+      }
+
+      /* #myArticle{
+        background-color: gray;
+        grid-area: article;
+      } */
+        /* #firstSection{
+        background-color: hotpink;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        height: 100px;
+      }
+      #secondSection{
+        background-color: green;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+      }
+      #thirdSection{
+        background-color: indigo;
+        grid-row: 3 / 4;
+        grid-column: 1 / 4;  
+
+      } */
+    </style>
+</body>
+</html>

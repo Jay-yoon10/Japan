@@ -1,0 +1,51 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "one one one"
+        "two three five"
+        "two four five";
+    gap: 10px;
+}
+h1 {
+    border: 2px solid black;
+    grid-area: one;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    padding: 15px;
+}
+#monet {
+    grid-area: two;
+}
+
+#manet {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    grid-area: five;
+}
+
+#beethoven {
+    text-align: center;
+    grid-area: four;
+}
+#mozart {
+    text-align: center;
+    grid-column: 2 / 3;
+    grid-area: three;
+}
+#image {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+}
