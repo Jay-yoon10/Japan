@@ -1,22 +1,27 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "heading-one heading-one heading-one heading-two" "gogh monet monet alchemist" "beethoven manet mozart alchemist";
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "heading-one heading-one heading-one heading-two"
+        "gogh monet monet alchemist"
+        "beethoven monet monet alchemist"
+        "beethoven manet mozart alchemist";
     gap: 5px;
 }
 
 .grid {
     border: 2px solid black;
-    padding: 15px;
+    padding: 25px;
+    margin: 10px;
 }
 
 h1 {
-    display: flex;
-    flex-direction: column;
     margin: 0px;
     justify-content: center;
-    align-items: center;
+}
+h3 {
+    text-align: left;
 }
 
 #heading-one {
@@ -27,8 +32,6 @@ h1 {
 }
 #monet {
     grid-area: monet;
-    display: flex;
-    flex-direction: column;
 }
 
 #manet {
@@ -36,36 +39,24 @@ h1 {
 }
 #beethoven {
     grid-area: beethoven;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
 #mozart {
     grid-area: mozart;
+    justify-content: space-around;
+    text-align: center;
 }
 #gogh {
-    display: flex;
-    justify-content: space-around;
     grid-area: gogh;
-    align-items: center;
 }
 #alchemist {
     grid-area: alchemist;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #goghImage {
     height: 200px;
     width: 200px;
-}
-
-#monetImage {
-    display: flex;
-    justify-content: space-between;
 }
 
 .monet-image {
@@ -76,8 +67,29 @@ h1 {
 #bookImage {
     width: 400px;
     height: 700px;
+    padding: 0px;
 }
 #beethovenImage {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+}
+
+#mozartImage {
+    width: 180px;
+    height: 180px;
+}
+/* monet, manet, beethoven, gogh */
+.grid--space-between {
+    display: flex;
+    justify-content: space-between;
+}
+/* h1, beethoven, mozart, gogh */
+.align--center {
+    display: flex;
+    align-items: center;
+}
+/* h1, monet, manet, beethoven, alchemist */
+.column--direction {
+    display: flex;
+    flex-direction: column;
 }
