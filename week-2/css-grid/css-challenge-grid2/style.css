@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
+    /* grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto; */
     grid-template-areas:
         "heading-one heading-one heading-one heading-two"
         "gogh monet monet alchemist"
