@@ -1,0 +1,38 @@
+.box {
+    border: 2px solid black;
+    margin-bottom: 100px;
+}
+
+.box__paragraph {
+    font-weight: bold;
+}
+
+.box__paragraph--red {
+    color: red;
+}
+
+.box__paragraph--arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    background-color: chocolate;
+    margin: 20px;
+}
+.btn--alert {
+    border: 2px solid red;
+}
+.btn__text {
+    font-weight: bold;
+    color: white;
+}
+.btn__text--primary {
+    font-style: italic;
+}
+.btn__text--secondary {
+    color: green;
+}
+
+.btn__text--primary:hover {
+    background-color: hotpink;
+}

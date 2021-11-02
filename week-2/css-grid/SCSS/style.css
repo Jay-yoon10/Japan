@@ -1,0 +1,26 @@
+.btn {
+  color: red;
+}
+.btn--lg {
+  width: 200px;
+  height: 50px;
+}
+.btn--hover:hover {
+  background-color: aqua;
+}
+.btn__border--blue {
+  background-color: blue;
+}
+.btn__text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.btn__text--italic {
+  font-style: italic;
+}
+.btn__text--bold {
+  font-weight: bold;
+}
+.btn__text--underline {
+  text-decoration: underline;
+}

@@ -1,0 +1,34 @@
+.btn {
+    color: red;
+
+    &--lg {
+        width: 200px;
+        height: 50px;
+    }
+
+    &--hover:hover {
+        background-color: aqua;
+    }
+
+    &__border {
+        &--blue {
+            background-color: blue;
+        }
+    }
+
+    &__text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+
+        &--italic {
+            font-style: italic;
+        }
+        &--bold {
+            font-weight: bold;
+        }
+
+        &--underline {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.section-one {
+    border: 2px solid black;
+
+    &__div {
+        &--dashed {
+            border: 3px dashed green;
+        }
+
+        &--solid {
+            border: 2px solid coral;
+        }
+    }
+
+    &__para {
+        &--blue {
+            color: blue;
+            text-decoration: line-through;
+        }
+
+        &--right {
+            text-align: right;
+        }
+    }
+
+    &__header {
+        &--center {
+            text-align: center;
+        }
+    }
+}
+
+.section-two {
+    margin-top: 150px;
+
+    &__para--coral {
+        color: coral;
+        font-weight: bold;
+    }
+
+    &__para--brown {
+        color: brown;
+    }
+}
+
+.box {
+    border: 3px solid black;
+
+    &__head--blue {
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    &__para--red {
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+    }
+    &__list--no-bullets {
+        list-style: none;
+    }
+}

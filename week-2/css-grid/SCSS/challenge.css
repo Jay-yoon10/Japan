@@ -1,0 +1,46 @@
+.section-one {
+  border: 2px solid black;
+}
+.section-one__div--dashed {
+  border: 3px dashed green;
+}
+.section-one__div--solid {
+  border: 2px solid coral;
+}
+.section-one__para--blue {
+  color: blue;
+  text-decoration: line-through;
+}
+.section-one__para--right {
+  text-align: right;
+}
+.section-one__header--center {
+  text-align: center;
+}
+
+.section-two {
+  margin-top: 150px;
+}
+.section-two__para--coral {
+  color: coral;
+  font-weight: bold;
+}
+.section-two__para--brown {
+  color: brown;
+}
+
+.box {
+  border: 3px solid black;
+}
+.box__head--blue {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box__para--red {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+.box__list--no-bullets {
+  list-style: none;
+}
