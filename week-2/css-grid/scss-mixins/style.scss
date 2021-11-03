@@ -1,0 +1,28 @@
+// @mixin [mixinName] {
+// property: propValue;
+// property: propValue;
+//}
+
+// to call/invoke we use the at include rule (@include [mixinName])
+
+@use "./partials/mixins";
+
+.nav {
+    @mixin font-weight {
+        font-weight: bolder;
+    }
+    @include font-weight();
+    @include mixins.flex;
+    @include mixins.standard-border();
+}
+
+.first-section {
+    @include mixins.flex;
+    @include mixins.standard-border();
+    @include mixins.border-mod(3px solid red, 1px dashed green);
+}
+
+.btn {
+    @include mixins.flex;
+    @include mixins.size-modifier(30px, 50px, 60px);
+}

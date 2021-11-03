@@ -1,0 +1,115 @@
+.grid-container {
+  display: grid;
+  /* grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto; */
+  grid-template-areas: "heading-one heading-one heading-one heading-two" "gogh monet monet alchemist" "beethoven monet monet alchemist" "beethoven manet mozart alchemist";
+  gap: 5px;
+}
+
+.grid {
+  border: 2px solid black;
+  padding: 25px;
+  margin: 10px;
+}
+
+#monet {
+  grid-area: monet;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+#manet {
+  grid-area: manet;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+#beethoven {
+  grid-area: beethoven;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#mozart {
+  grid-area: mozart;
+  justify-content: space-around;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#gogh {
+  grid-area: gogh;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+#alchemist {
+  grid-area: alchemist;
+  display: flex;
+  flex-direction: column;
+}
+
+.gogh-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#goghImage {
+  height: 200px;
+  width: 200px;
+}
+
+.monet-image {
+  height: 150px;
+  width: 150px;
+}
+
+#bookImage {
+  width: 400px;
+  height: 700px;
+  padding: 0px;
+}
+
+#beethovenImage {
+  width: 250px;
+  height: 250px;
+}
+
+#mozartImage {
+  width: 180px;
+  height: 180px;
+}
+
+h1 {
+  margin: 0px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: left;
+}
+
+#heading-one {
+  grid-area: heading-one;
+}
+
+#heading-two {
+  grid-area: heading-two;
+}

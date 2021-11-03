@@ -1,0 +1,72 @@
+// Syntax of variable in SCSS
+// $[variableName]: [value of variable]:
+
+$primary-font-color: #fffff2;
+$secondar-font-color: #f9f1f1;
+
+$primary-backgroud: #4fc1df;
+$secondary-backgroud: #d90909;
+$hover-backgroud: #0dcebd;
+
+$primary-font: Arial, Helvetica, sans-serif;
+$btn-lg-width: 200px;
+$btn-lg-heigh: 50px;
+.btn {
+    color: $primary-font-color;
+    margin: 20px;
+
+    &--lg {
+        width: $btn-lg-width;
+        height: $btn-lg-heigh;
+    }
+
+    &--hover:hover {
+        background-color: $hover-backgroud;
+    }
+
+    &__border {
+        &--blue {
+            background-color: $primary-backgroud;
+        }
+        &--red {
+            background-color: $secondary-backgroud;
+        }
+    }
+
+    &__text {
+        font-family: $primary-font;
+        font-size: 20px;
+
+        &--italic {
+            font-style: italic;
+        }
+        &--bold {
+            font-weight: bold;
+        }
+
+        &--notUnderline {
+            text-decoration: none;
+        }
+    }
+}
+
+// $primary-header-color: hotpink;
+
+h1 {
+    //H1 scope
+    $primary-header-color: chocolate;
+    //This variable is only accessible in this scope
+    color: $primary-header-color;
+}
+.heading2 {
+    $primary-header-color: hotpink;
+    $secondary-header-font-size: 48px;
+    color: $primary-header-color;
+
+    &__text {
+        font-size: $secondary-header-font-size;
+        &--underline {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use "../partials/mixin";
+
+h1 {
+    margin: 0px;
+    justify-content: center;
+    @include mixin.flex-align-center;
+    @include mixin.flex-direction-column;
+}
+
+h3 {
+    text-align: left;
+}
+
+#heading-one {
+    grid-area: heading-one;
+}
+#heading-two {
+    grid-area: heading-two;
+}

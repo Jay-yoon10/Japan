@@ -1,0 +1,41 @@
+@use "./../partials/palette";
+@use "./../partials/typography";
+
+.btn {
+    color: palette.$primary-font-color;
+    margin: 20px;
+
+    &--lg {
+        width: typography.$btn-lg-width;
+        height: typography.$btn-lg-height;
+    }
+
+    &--hover:hover {
+        background-color: palette.$hover-backgroud;
+    }
+
+    &__border {
+        &--blue {
+            background-color: palette.$primary-backgroud;
+        }
+        &--red {
+            background-color: palette.$secondary-backgroud;
+        }
+    }
+
+    &__text {
+        font-family: typography.$primary-font;
+        font-size: 20px;
+
+        &--italic {
+            font-style: italic;
+        }
+        &--bold {
+            font-weight: bold;
+        }
+
+        &--notUnderline {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@use "./../partials/palette";
+@use "./../partials/typography";
+
+.section-one {
+    border: typography.$primary-border-pixel typography.$primary-border-style
+        palette.$primary-border-color;
+
+    &__div {
+        &--dashed {
+            border: typography.$secondary-border-pixel
+                typography.$secondary-border-style
+                palette.$secondary-border-color;
+        }
+
+        &--solid {
+            border: typography.$primary-border-pixel palette.$third-border-color
+                typography.$primary-border-style;
+        }
+    }
+
+    &__para {
+        &--blue {
+            color: palette.$primary-text-color;
+            text-decoration: typography.$primary-text-decoration;
+        }
+
+        &--right {
+            text-align: typography.$primary-text-align;
+        }
+    }
+
+    &__header {
+        &--center {
+            text-align: typography.$secondary-text-align;
+        }
+    }
+}

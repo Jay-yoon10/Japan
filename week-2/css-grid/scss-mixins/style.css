@@ -1,0 +1,38 @@
+.nav {
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+  border: 2px solid black;
+}
+
+.first-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+  border: 2px solid black;
+}
+.first-section--mainbd {
+  border: 3px solid red;
+}
+.first-section--secondarybd {
+  border: 1px dashed green;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.btn--sm {
+  font-size: 30px;
+}
+.btn--md {
+  font-size: 50px;
+}
+.btn--lg {
+  font-size: 60px;
+}

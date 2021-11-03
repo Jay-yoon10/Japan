@@ -1,25 +1,29 @@
-.box {
-    border: 2px solid black;
+$primary-border-pixel: 2px solid;
+$primary-text-color: blue;
+$primary-font: Arial, Helvetica, sans-serif;
+
+.section-one {
+    border: $primary-border-pixel black;
+
+    &__div {
+        &--dashed {
+            border: 3px dashed green;
+        }
+
+        &--solid {
+            border: $primary-border-pixel coral;
+        }
+    }
 
     &__para {
         &--blue {
-            color: blue;
+            color: $primary-text-color;
             text-decoration: line-through;
         }
 
         &--right {
             text-align: right;
         }
-    }
-}
-.section1 {
-    &--dashed {
-        border: 3px dashed green;
-    }
-}
-.section2 {
-    &--solid {
-        border: 2px solid coral;
     }
 
     &__header {
@@ -29,7 +33,7 @@
     }
 }
 
-.box2 {
+.section-two {
     margin-top: 150px;
 
     &__para--coral {
@@ -42,17 +46,17 @@
     }
 }
 
-.section {
+.box {
     border: 3px solid black;
 
     &__head--blue {
-        color: blue;
-        font-family: Arial, Helvetica, sans-serif;
+        color: $primary-text-color;
+        font-family: $primary-font;
     }
 
     &__para--red {
         color: red;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $primary-font;
         text-decoration: underline;
     }
     &__list--no-bullets {

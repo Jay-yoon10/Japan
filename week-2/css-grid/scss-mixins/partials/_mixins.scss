@@ -1,0 +1,35 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include margin-bottom();
+}
+@mixin margin-bottom {
+    margin-bottom: 100px;
+}
+@mixin standard-border {
+    border: 2px solid black;
+}
+
+@mixin size-modifier($small, $medium, $large) {
+    &--sm {
+        font-size: $small;
+    }
+    &--md {
+        font-size: $medium;
+    }
+
+    &--lg {
+        font-size: $large;
+    }
+}
+//assigning default value
+
+@mixin border-mod($mainBorder, $secondaryBorder) {
+    &--mainbd {
+        border: $mainBorder;
+    }
+    &--secondarybd {
+        border: $secondaryBorder;
+    }
+}

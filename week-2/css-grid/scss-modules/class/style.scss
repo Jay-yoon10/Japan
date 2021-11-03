@@ -1,0 +1,29 @@
+// Syntax of variable in SCSS
+// $[variableName]: [value of variable]:
+
+//using the @use rules, we import the palette (creating a palette object)
+// Omit the leading underscore and the file extension on your imported file path
+
+@use "./moduels/button.scss";
+@use "./partials/_palette";
+
+// $primary-header-color: hotpink
+
+h1 {
+    //H1 scope
+    $primary-header-color: chocolate;
+    //This variable is only accessible in this scope
+    color: $primary-header-color;
+}
+.heading2 {
+    color: palette.$primary-header-color;
+
+    &__text {
+        $secondary-header-font-size: 48px;
+
+        &--underline {
+            font-size: $secondary-header-font-size;
+            text-decoration: underline;
+        }
+    }
+}

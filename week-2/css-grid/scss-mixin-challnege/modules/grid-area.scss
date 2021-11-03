@@ -1,0 +1,52 @@
+@use "./../partials/mixin";
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto; */
+    grid-template-areas:
+        "heading-one heading-one heading-one heading-two"
+        "gogh monet monet alchemist"
+        "beethoven monet monet alchemist"
+        "beethoven manet mozart alchemist";
+    gap: 5px;
+}
+.grid {
+    border: 2px solid black;
+    padding: 25px;
+    margin: 10px;
+}
+#monet {
+    grid-area: monet;
+    @include mixin.flex-combination2;
+}
+
+#manet {
+    grid-area: manet;
+    @include mixin.flex-combination2;
+}
+#beethoven {
+    grid-area: beethoven;
+    text-align: center;
+    @include mixin.flex-combination;
+    @include mixin.flex-direction-column;
+}
+
+#mozart {
+    grid-area: mozart;
+    justify-content: space-around;
+    text-align: center;
+    @include mixin.flex-align-center;
+}
+#gogh {
+    grid-area: gogh;
+    @include mixin.flex-combination;
+}
+#alchemist {
+    grid-area: alchemist;
+    @include mixin.flex-direction-column;
+}
+
+.gogh-div {
+    @include mixin.flex-space-column;
+}
