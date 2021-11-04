@@ -1,0 +1,5 @@
+@mixin flag($width, $height, $color) {
+    width: $width;
+    height: $height;
+    background: $color;
+}

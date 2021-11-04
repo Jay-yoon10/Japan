@@ -1,0 +1,51 @@
+// renaming
+@use "./partials/devices" as media;
+@use "./partials/" .btn {
+    margin: 20px;
+    @include media.phone {
+        width: 100px;
+    }
+
+    @include media.tablet {
+        width: 200px;
+    }
+
+    @include media.tablet-landscape {
+        width: 400px;
+    }
+
+    @include media.laptop {
+        width: 800px;
+    }
+}
+
+.gallery {
+    display: grid;
+
+    @include media.phone {
+        grid-template-columns: 1fr;
+        img {
+            //width: 90% > 90% of parent container
+            // 90vw > 90% of web browser
+            width: 90vw;
+        }
+    }
+    @include media.tablet {
+        grid-template-columns: repeat(2, 1fr);
+        img {
+            width: 45vw;
+        }
+    }
+    @include media.tablet-landscape {
+        grid-template-columns: repeat(3, 1fr);
+        img {
+            width: 30vw;
+        }
+    }
+    @include media.laptop {
+        grid-template-columns: repeat(4, 1fr);
+        img {
+            width: 22vw;
+        }
+    }
+}

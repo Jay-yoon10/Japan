@@ -1,0 +1,45 @@
+@use "./partials/devices" as flag;
+@use "./partials/mixin.scss";
+.flag {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 300px;
+    height: 200px;
+
+    @include flag.german {
+        &__color1 {
+            @include mixin.flag(100%, 33.33%, black);
+        }
+        &__color2 {
+            @include mixin.flag(100%, 33.33%, rgb(221, 0, 0));
+        }
+        &__color3 {
+            @include mixin.flag(100%, 33.33%, rgb(255, 206, 0));
+        }
+    }
+    @include flag.belgian {
+        flex-direction: row;
+        &__color1 {
+            @include mixin.flag(33.33%, 100%, black);
+        }
+        &__color2 {
+            @include mixin.flag(33.33%, 100%, rgb(253, 218, 36));
+        }
+        &__color3 {
+            @include mixin.flag(33.33%, 100%, rgb(239, 51, 64));
+        }
+    }
+    @include flag.irish {
+        flex-direction: row;
+        &__color1 {
+            @include mixin.flag(33.33%, 100%, rgb(22, 155, 98));
+        }
+        &__color2 {
+            @include mixin.flag(33.33%, 100%, white);
+        }
+        &__color3 {
+            @include mixin.flag(33.33%, 100%, rgb(255, 130, 0));
+        }
+    }
+}

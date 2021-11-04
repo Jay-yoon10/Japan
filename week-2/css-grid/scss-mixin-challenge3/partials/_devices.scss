@@ -1,0 +1,19 @@
+$sm: 600px;
+$md: 900px;
+
+@mixin german {
+    @media only screen and (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin belgian {
+    @media only screen and (min-width: $sm + 1px) and (max-width: $md) {
+        @content;
+    }
+}
+@mixin irish {
+    @media only screen and (min-width: $md + 1px) {
+        @content;
+    }
+}

@@ -1,0 +1,45 @@
+$sm: 600px;
+$md: 900px;
+
+@mixin size-mod($height: 100%, $width: 33.33%) {
+    height: $height;
+    width: $width;
+}
+
+@mixin stripe-color($first, $second, $third) {
+    &--one {
+        background-color: $first;
+    }
+    &--two {
+        background-color: $second;
+    }
+    &--three {
+        background-color: $third;
+    }
+}
+.flag {
+    height: 300px;
+    width: 500px;
+    border: 2px solid black;
+
+    @media only screen and (max-width: $sm) {
+        &__stripe {
+            @include size-mod(33.33%, 100%);
+            @include stripe-color(black, red, yellow);
+        }
+    }
+    @media only screen and (min-width: $sm + 1px) and (max-width: $md) {
+        display: flex;
+        &__stripe {
+            @include size-mod;
+            @include stripe-color(black, yellow, red);
+        }
+    }
+    @media only screen and (min-width: $md + 1px) {
+        display: flex;
+        &__stripe {
+            @include size-mod;
+            @include stripe-color(green, white, orange);
+        }
+    }
+}
