@@ -1,0 +1,48 @@
+@mixin btn-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin btn-space {
+    margin-bottom: 20px;
+}
+@mixin btn-typography {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@mixin btn-modifier-border($red, $d-blue, $blue) {
+    &__button--red {
+        border: $red;
+    }
+
+    &__chip--d-blue {
+        border: $d-blue;
+    }
+
+    &__pill--blue {
+        border: $blue;
+    }
+}
+@mixin btn-size-width($button, $chip, $pill) {
+    &__button {
+        width: $button;
+    }
+    &__chip {
+        width: $chip;
+    }
+    &__pill {
+        width: $pill;
+    }
+}
+@mixin btn-button-shape($sm, $md, $lg) {
+    &__button {
+        border-radius: $sm;
+    }
+    &__chip {
+        border-radius: $md;
+    }
+    &__pill {
+        border-radius: $lg;
+    }
+}

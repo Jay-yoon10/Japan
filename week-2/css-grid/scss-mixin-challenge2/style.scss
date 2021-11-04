@@ -1,0 +1,23 @@
+@use "./partials/mixin.scss";
+
+.btn {
+    @include mixin.btn-flex;
+    @include mixin.btn-typography();
+    @include mixin.btn-modifier-border(
+        2px dashed red,
+        2px solid blue,
+        2px dashed blue
+    );
+    @include mixin.btn-size-width(100px, 70px, 50px);
+    @include mixin.btn-button-shape(2px, 8px, 20px);
+
+    &__button {
+        @include mixin.btn-space;
+    }
+    &__chip {
+        @include mixin.btn-space;
+    }
+    &__pill {
+        @include mixin.btn-space;
+    }
+}
