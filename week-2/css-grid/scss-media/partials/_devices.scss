@@ -16,7 +16,7 @@ $xl: 1400px; // extra large
     }
 }
 @mixin tablet-landscape {
-    @media only screen and (min-width: $sm + 1px) and (max-width: $md) {
+    @media only screen and (min-width: $sm + 1px) and(max-width: $md) {
         @content;
     }
 }
