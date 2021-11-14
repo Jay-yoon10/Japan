@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans & Boolean Expression</title>
+</head>
+<body>
+    <!-- Why do we use boolean expression? -->
+    <!-- How do we compare variables? -->
+    <!-- What kind of comparisons can we do in JS? -->
+
+    <script>
+        // Basic Comparators
+
+        console.log('Equal', 7 == 7) //true
+        console.log('Equal', 7 == "7") // true becuase JS auto-convert types
+        console.log('Equal', "Typed", 13 === "13") // false > number is not a string
+        console.log('Equal', "Typed", 13 === 12) //true
+
+        console.log("Not Equal", 8 != 8) //false
+        console.log ("Not Equal", 8 != "8")  //false
+        console.log ("Not Equal", "8" !== "7") //true
+
+        // Greater than, less than
+        console.log("GT", 5 > 3); //true
+        console.log("GT", 5 > 6); //false
+
+        console.log("LT", 5 < 3); //false
+        console.log("LT", 10 < 21); //true
+
+        console.log("GTE", 12 >= 15); //false
+        console.log("LTE", 12 <= 15); //true
+        console.log("GTE", 12 >= 11); //true
+
+        console.log("GTE", 12 >= 12); //true
+        console.log("GTE", 12 <= 9); //false
+
+        // Multiple Expression Handling
+        // && : AND operator
+        // || : OR operator
+        console.log("AND", 3 < 5 && 6 < 8) // true
+        console.log("AND", 3 < 5 && 6 < 4); // false
+        console.log("AND", 3 == '3' && 7 > 5 && 13 === 12); // false
+
+        console.log("OR", 3 < 5 || 6 < 8); true
+        console.log("OR", 3 < 2 || 6 < 8); true 
+        console.log("OR", 2 < 1 || 8 < 6); false
+        console.log("AND OR", 3 < 5 && 6 < 3 || 5 > 3)  
+        console.log("AND OR", 6 < 3 || 5 > 3 && 3 < 5)
+
+        // Truthy / Falsey Values
+        console.log(NaN);
+        // Falsy Value > return false when evaluated
+        // NaN;
+        // null;
+        // undefined;
+        // 0; -0;
+        // "" (empty string);
+        // false;
+
+        let x = 5;
+        console.log(( 5 < 6) || x); true
+        console.log(x && 6 < 6); false
+        console.log(!x && 5 <6); false
+
+        let zero = 0;
+        console.log(!zero && 7 == "7");
+        
+        let myString ="string"
+        console.log(!myString);
+
+        
+        console.log(myString || 7 > 5);
+
+        console.log(10 % 3 === -1 % 2);
+        console.log(892783 != "89278"+2 == 0);
+
+
+        console.log(10 && 123 && -1 && 3);
+    </script>
+</body>
+</html>

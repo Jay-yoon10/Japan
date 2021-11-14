@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+</head>
+<body>
+    <script>
+        // let  n;
+        // n = 2;
+        // if (n % 2 === 0){
+        //     console.log(`${n} is even`)
+        // } else{
+        //     console.log(`${n} is odd`)
+        // }
+
+        const x = 5;
+        const y = 6;
+
+        if (x > y){
+            console.log(`x value : ${x} is greater than y value: ${y}`);
+        } else if (x < y){
+            console.log(`x value : ${x} is less than y value: ${y}`);
+        } else if (x === y){
+            console.log(`x value : ${x} is equal to y value: ${y}`);
+        } 
+        console.log("challenge done");
+        
+        // Switch Statement
+        /* switch (variable/value) {
+                case (variable1 / value1):
+                    Code to execute if value 1 === value;
+                    break;
+                case (variable2 / value2):
+                    Code to execute if value 2 === value;
+                    break;
+                    default;
+                    Code to execute if none of the cases are true/ valid;
+                
+        } */            
+
+        switch (0) {
+            case 0:
+                console.log("Success");
+                break;
+            case 1:
+                console.log("File path Broken");
+                break;
+            case 5:
+                console.log("File Not Found");
+                break;
+            case 3:
+                console.log("Could not Create File");    
+                break;
+            default:
+                console.log("Error Code is not valid")
+            }
+        
+            const input = "k";
+
+            switch (input) {
+                case 'e':
+                case 'E':
+                case 'exit':
+                    console.log("the app is exiting");
+                    break;
+                case 'c':
+                case 'C':
+                case 'continue':
+                    console.log ("Continuing Execution");
+                    break;
+                default:console.log("Command Not Found")
+
+            }
+
+            const day = -1;
+            switch (day){
+                case 1 :console.log("Today is Monday");
+                break;
+                case 2 :console.log("Today is Tuesday");
+                break;
+                case 3 :console.log("Today is Wednesday");
+                break;
+                case 4 :console.log("Today is Thursday");
+                break;
+                case 5 :console.log("Today is Friday");
+                break;
+                case 6 :console.log("Today is Saturday");
+                break;
+                case 7 :console.log("Today is Sunday");
+                break;
+                default: console.log("Out of range, please input 1-7");
+            }
+        
+    </script>
+</body>
+</html>

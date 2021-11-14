@@ -1,6 +1,7 @@
 // renaming
 @use "./partials/devices" as media;
-@use "./partials/" .btn {
+@use "./partials/";
+.btn {
     margin: 20px;
     @include media.phone {
         width: 100px;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge3</title>
+</head>
+<body>
+
+Challenge: Basketball Points
+You are counting points for a basketball game, given the amount of 2-pointers scored and 3-pointers scored, find the final points for the team and return that value.
+Challenge: Less Than 100?
+Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+Examples
+lessThan100(22, 15) ➞ true
+// 22 + 15 = 37
+
+lessThan100(83, 34) ➞ false
+// 83 + 34 = 117
+
+lessThan100(3, 77) ➞ true
+    <script>
+        // challenge1
+
+        function remainder(x , y){
+            
+            return (`Remainder of ${x} divided by ${y} is : ${x % y}`);
+            
+        }
+        console.log(remainder(1,3));
+        console.log(remainder(3,4));
+        console.log(remainder(-9,45));
+        console.log(remainder(5,5));
+
+        // challenge2
+        function totalScore(twoPointer, threePointer){
+
+            let totalScoreTwo = twoPointer *2;
+            let totalScoreThree = threePointer *3
+            const total = totalScoreThree + totalScoreTwo;
+
+            console.log(`Total score of two pointer : ${totalScoreTwo} `)
+            console.log(`Total score of three pointer : ${totalScoreThree} `)
+            console.log(`Total score of : ${total}`)
+            return total;
+            
+        }
+        console.log(totalScore(3,2));
+        // challenge3
+
+        function isLessThan100(value1, value2){
+            let totalSum = value1 + value2;
+            if (totalSum < 100){
+                console.log(`Sum of the two values : ${totalSum} is less than 100`);
+                return true;
+            } else {
+                console.log(`Sum of the two values : ${totalSum} is not than 100 `)
+                return false;
+            }
+        }
+
+        console.log(isLessThan100(88,15));
+
+        function isLessThan1000(value1, value2){
+            let totalSum = value1 + value2;
+            return totalSum < 1000 ? true : false;
+        }
+
+        console.log(isLessThan1000(888,15));
+    </script>
+    
+</body>
+</html>

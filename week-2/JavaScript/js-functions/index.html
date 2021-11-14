@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+</head>
+<body>
+    <!-- Why do we use functions? -->
+    <!-- What are functions? -->
+    <!-- Self-Contained, executable pieces of code -->
+    <!-- How to write a function? -->
+</body>
+    <script>
+        // Syntax of function
+        // function <functionName>(arguments){
+        // function body, this is the block of code that is going to be executed when your function is called/invoked.
+        // [return] (variable to return)
+        // };
+
+        // Every function in JS returns undefined unless specified otherwise.
+        // "return" ends the execution of the function.
+        // "return" returns a value to the function caller (output)
+        
+        // Declaring (defining) a function
+        function noArguments(){
+            return 13;
+        }
+        let x = 2;
+
+        const value = noArguments();
+        console.log(value);
+
+        function printMe(something) {
+            console.log(something);
+            const number = x + 6;
+            console.log(number);
+            return number + 2;
+        }
+        const output = printMe("HI");
+        console.log(printMe("hi my name is Jay"));
+
+        // Perimeter of a rectangle
+        function rectPerim(width, length){
+            const perimeter = 2*(width+length)
+            return perimeter;
+        }
+
+        console.log(rectPerim(hi));
+    </script>
+</html>

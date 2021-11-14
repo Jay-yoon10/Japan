@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge2</title>
+</head>
+<body>
+     <!-- 1. Create a function that takes your age in years and returns your age in days.
+    1. Create a function that takes your age in years and returns your age in seconds.
+    ```js
+    ageInDays(32) => 11680
+    ageInSeconds(32) => 1009152000
+    */ -->
+    <script>
+        function ageInDays(age){
+            return age * 365;
+        }
+        function ageInSeconds(age){
+            const yearsInHours = 365 * 24;
+            const yearsInMinutes = yearsInHours*60;
+            const yearsInSeconds = yearsInMinutes*60;
+            return yearsInSeconds * age; 
+        } 
+        console.log(ageInDays(32));
+        console.log(ageInSeconds(32));
+
+        
+    </script>
+</body>
+</html>
